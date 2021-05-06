@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5A0B6E39263EBF7F004A0C8F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0B6E38263EBF7F004A0C8F /* CloudKit.framework */; };
+		5A284E7626444A33002F3A8A /* explorers.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A284E7526444A33002F3A8A /* explorers.json */; };
 		5A5D94ED26412F0600E43659 /* ExplorerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5D94EC26412F0600E43659 /* ExplorerData.swift */; };
-		5A7D8E4426416DA700A4CA6C /* explorers.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A7D8E4326416DA700A4CA6C /* explorers.json */; };
 		5A7D8E46264175F500A4CA6C /* ExplorerListCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D8E45264175F500A4CA6C /* ExplorerListCellTableViewCell.swift */; };
 		5AC830A12644370D00686D01 /* signInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC830A02644370D00686D01 /* signInController.swift */; };
 		5AE9BE0B263C492F001EB09F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE9BE0A263C492F001EB09F /* AppDelegate.swift */; };
@@ -24,8 +24,8 @@
 /* Begin PBXFileReference section */
 		5A0B6E36263EBF61004A0C8F /* ExplorerLog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExplorerLog.entitlements; sourceTree = "<group>"; };
 		5A0B6E38263EBF7F004A0C8F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		5A284E7526444A33002F3A8A /* explorers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = explorers.json; path = "../../../../../Downloads/ExplorerApp-JSON/ExplorerApp/explorers.json"; sourceTree = "<group>"; };
 		5A5D94EC26412F0600E43659 /* ExplorerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerData.swift; sourceTree = "<group>"; };
-		5A7D8E4326416DA700A4CA6C /* explorers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = explorers.json; path = "../../../../Downloads/ExplorerApp-JSON/ExplorerApp/explorers.json"; sourceTree = "<group>"; };
 		5A7D8E45264175F500A4CA6C /* ExplorerListCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerListCellTableViewCell.swift; sourceTree = "<group>"; };
 		5AC830A02644370D00686D01 /* signInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInController.swift; sourceTree = "<group>"; };
 		5AE9BE07263C492F001EB09F /* ExplorerLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExplorerLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,7 +87,7 @@
 				5AEA330B2642DCEA003CE0DB /* viewProfileController.swift */,
 				5AE9BE13263C4930001EB09F /* Assets.xcassets */,
 				5AE9BE15263C4930001EB09F /* LaunchScreen.storyboard */,
-				5A7D8E4326416DA700A4CA6C /* explorers.json */,
+				5A284E7526444A33002F3A8A /* explorers.json */,
 				5AE9BE18263C4930001EB09F /* Info.plist */,
 				5A5D94EC26412F0600E43659 /* ExplorerData.swift */,
 				5A7D8E45264175F500A4CA6C /* ExplorerListCellTableViewCell.swift */,
@@ -155,7 +155,7 @@
 			files = (
 				5AE9BE17263C4930001EB09F /* LaunchScreen.storyboard in Resources */,
 				5AE9BE14263C4930001EB09F /* Assets.xcassets in Resources */,
-				5A7D8E4426416DA700A4CA6C /* explorers.json in Resources */,
+				5A284E7626444A33002F3A8A /* explorers.json in Resources */,
 				5AE9BE12263C492F001EB09F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
