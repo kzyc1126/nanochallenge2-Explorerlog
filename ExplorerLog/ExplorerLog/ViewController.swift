@@ -9,13 +9,11 @@ import UIKit
 
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate{
     @IBOutlet weak var profileImage: UIImageView!
-   public var explorers = [explorersData]()
-    var filteredData:[explorersData]!
+    private var explorers = [explorersData]()
+    var filteredData = [explorersData]()
     @IBOutlet weak var explorersTableView: UITableView!
     @IBOutlet weak var expertiseSegmentedControl: UISegmentedControl!
     @IBOutlet weak var searchBar: UISearchBar!
-    var interest = ["Music","Design","Technology","Culinary","Art"]
-    var skills = ["Swift","Photoshop",]
     var selectedindex = 0
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredData.count
@@ -59,7 +57,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         }
     }
       @IBAction func expertise(_ sender: Any) {
-        searchBar.endEditing(true)
           switch expertiseSegmentedControl.selectedSegmentIndex {
           case 0:
             filteredData = self.explorers.filter {$0.Expertise.contains("Tech")}.sorted(by: {$0.Name < $1.Name})
@@ -75,13 +72,12 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
                 explorersTableView.reloadData()
            
           }
-        
           
       }
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         searchBar.endEditing(true)
     }
-
+   
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
         if searchText.count<=0{
